@@ -9,7 +9,7 @@ const Aboutimages = () => {
         src={studentDoodle}
         alt=""
         className="rounded float-left"
-        style={{ height: "220px", width: "150px" }}
+        style={{ height: "220px", width: "300px" }}
       />
     </div>
     <div className="text-right">
@@ -17,7 +17,7 @@ const Aboutimages = () => {
         src={teacherDoodle}
         alt=""
         className="rounded float-right"
-        style={{ height: "220px", width: "150px" }}
+        style={{ height: "220px", width: "300px" }}
       />
     </div>
   </div>

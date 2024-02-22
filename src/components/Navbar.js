@@ -15,14 +15,14 @@ const Navbar = () => {
       navigate("/studentProfile");
     } else {
       navigate("/professionalProfile");
-    }
+    }  
   };
   return (
     <div>
       <nav
         className="navbar navbar-expand-md h-5 py-1 fixed-top"
         style={{
-          backgroundColor: "#eeeeee",
+          backgroundColor: "#ffffff",
           borderBottom: "2px solid grey", // Add black border at the bottom
         }}
       >
@@ -30,7 +30,7 @@ const Navbar = () => {
           <img
             src={iomplogo}
             alt=""
-            style={{ height: "8vh", width: "5vw", paddingRight: "10px" }}
+            style={{ height: "8vh", width: "12vw", paddingRight: "10px" }}
           />
         </a>
         <button
@@ -52,7 +52,7 @@ const Navbar = () => {
                 href="/"
                 className="nav-link pl-4 pr-4"
                 style={{
-                  color: "#4455a4",
+                  color: "#013220",
                   fontWeight: "bold",
                   fontSize: "22px",
                 }}
@@ -65,7 +65,7 @@ const Navbar = () => {
                 href="/about"
                 className="nav-link pl-4 pr-4"
                 style={{
-                  color: "#4455a4",
+                  color: "#013220",
                   fontWeight: "bold",
                   fontSize: "22px",
                 }}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 href="/features"
                 className="nav-link pl-4 pr-4"
                 style={{
-                  color: "#4455a4",
+                  color: "#013220",
                   fontWeight: "bold",
                   fontSize: "22px",
                 }}
@@ -91,7 +91,7 @@ const Navbar = () => {
                 href="/working"
                 className="nav-link pl-4 pr-4"
                 style={{
-                  color: "#4455a4",
+                  color: "#013220",
                   fontWeight: "bold",
                   fontSize: "22px",
                 }}
@@ -101,70 +101,7 @@ const Navbar = () => {
 
                 
             </li>
-            <li className="nav-item">
-             
-                {localStorage.getItem("role")==="student" && <a href="/ScheduledStudent" className="nav-link pl-2 pr-4"
-                style={{
-                  color: "#4455a4",
-                  fontWeight: "bold",
-                  fontSize: "22px",
-                }}> Dashboard </a> }
-              {localStorage.getItem("role")==="professional" && <a href="/ScheduledProfessional" className="nav-link pl-2 pr-4"
-                style={{
-                  color: "#4455a4",
-                  fontWeight: "bold",
-                  fontSize: "22px",
-                }}> Dashboard </a> }
-          
-
-                
-            </li>
-              </ul>
-          {localStorage.getItem("token")===null && (
-            <form className=" my-2 my-lg-0 pr-3">
-              <a
-                className="btn my-2 my-sm-0"
-                style={{
-                  backgroundColor: "#4455a4",
-                  color: "#eeeeee",
-                  fontWeight: "bold",
-                  fontSize: "22px",
-                }}
-                type="submit"
-                href="/Login"
-              >
-                Login
-              </a>
-            </form>
-          )}
-          {localStorage.getItem("token") && (
-            <div class="btn-group">
-              <button
-                class="btn btn-secondary btn-sm dropdown-toggle"
-                type="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                More options here
-              </button>
-              <div class="dropdown-menu">
-              <div >{localStorage.getItem("role")==="student" && <a href="/StudentProfile" class="dropdown-item">Profile </a> }
-              {localStorage.getItem("role")==="professional" && <a href="/ProfessionalProfile" class="dropdown-item"> Profile</a> }</div>
-                <a href="/report" class="dropdown-item" >
-                  Report
-                </a>
-                <div class="dropdown-divider"></div>
-                <button
-                  class="dropdown-item secondary"
-                  href="#"
-                  onClick={handleLogOut}
-                >
-                  Logout
-                </button>
-              </div>
-            </div>
-          )}
+          </ul>
         </div>
       </nav>
     </div>

@@ -13,10 +13,10 @@ const Benefits = () => {
       <br></br>
       <div
         className="container-fluid"
-        style={{ backgroundColor: "black", height: "94vh" }}
+        style={{ backgroundColor: "#013220", height: "94vh" }}
       >
-        <h1 className="pt-5 text-center" style={{ color: "#eeeeee" }}>
-          FEATURES OF PROCONNECT
+        <h1 className="pt-5 text-center" style={{ color: "white" }}>
+          FEATURES OF TRAIN-ON
         </h1>
         <div className="container-fluid pt-5">
           <div className="row">
@@ -30,7 +30,7 @@ const Benefits = () => {
                     src={benefit1}
                     alt=""
                     className="rounded float-center pt-3 pb-2"
-                    style={{ height: "175px", width: "185px" }}
+                    style={{ height: "175px", width: "185px" ,borderRadius:"50%"}}
                   />
                 </div>
                 <div>
@@ -42,12 +42,11 @@ const Benefits = () => {
                       textAlign: "center",
                     }}
                   >
-                    INTERVIEW FEEDBACK
+                    REAL TIME POSE RECOGNITION
                   </h5>
                   <p className="p-2" style={{ fontWeight: "bold" }}>
-                    Get a detailed interview feedback with performance-based
-                    metrics and comprehensive review on your strengths &
-                    weaknesses.
+                   TrainOn's ML model accurately identifies and recognizes yoga poses performed by the user in real-time through the device's camera. This feature ensures that users receive immediate feedback on their form and alignment, helping them refine their technique and prevent injury.
+
                   </p>
                 </div>
               </div>
@@ -74,11 +73,11 @@ const Benefits = () => {
                       textAlign: "center",
                     }}
                   >
-                    USER FRIENDLY
+                    PERSONALISED POSE RECOMMENDATIONS
                   </h4>
                   <p className="p-2" style={{ fontWeight: "bold" }}>
-                    ProConnect can be accessed from your desktop, laptop or
-                    tablet and is very easy to use by the user.
+                  TrainOn's ML model provides personalized pose recommendations based on the user's skill level, flexibility, and specific areas of focus. By analyzing the user's movements and posture, the app suggests appropriate poses to target their individual needs and goals.
+
                   </p>
                 </div>
               </div>
@@ -105,12 +104,11 @@ const Benefits = () => {
                       textAlign: "center",
                     }}
                   >
-                    CURATED RESOURCES
+                    PRIVACY
                   </h5>
                   <p className="p-2" style={{ fontWeight: "bold" }}>
-                    Prime your interview skills & etiquette by getting access to
-                    the experienced interviewers covering every aspect of the
-                    interview cycle with ProConnect.
+                  TrainOn allows users to practice yoga in the privacy of their own space, without the need to attend group classes or share their practice with others. This feature enables users to focus solely on their individual practice without feeling self-conscious or exposed, promoting a sense of comfort, autonomy, and privacy.
+
                   </p>
                 </div>
               </div>
@@ -137,11 +135,10 @@ const Benefits = () => {
                       textAlign: "center",
                     }}
                   >
-                    SAVE TIME
+                    SEAMLESS POSE PROGRESSION
                   </h5>
                   <p className="p-2" style={{ fontWeight: "bold" }}>
-                    Attend mock interviews from anywhere, eliminating the need &
-                    the costs associated with travel. Moreover, you save time!
+                  TrainOn seamlessly transitions users from one pose to the next based on the ML model's recognition of completed poses. Once a user successfully completes a pose, the app automatically advances to the next pose in the sequence, maintaining the flow and continuity of the session. This feature eliminates the need for manual intervention, allowing users to focus fully on their practice without interruptions.
                   </p>
                 </div>
               </div>

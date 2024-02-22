@@ -7,18 +7,18 @@ import Features from "./components/Features";
 import Working from "./components/Working";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import StudentProfile from "./components/StudentProfile";
-import ScheduledStudent from "./components/ScheduledStudent";
-import MakeRequest from "./components/MakeRequest";
-import StudentReview from "./components/StudentReview";
-import CreateESP from "./components/CreateESP";
-import ActiveStudents from "./components/ActiveStudents";
-import Report from "./components/Report";
-import ProfessionalProfile from "./components/ProfessionalProfile";
-import MatchRequest from "./components/MatchRequest";
-import EditProfessionalProfile from "./components/EditProfessionalProfile";
-import ScheduledProfessional from "./components/ScheduledProfessional";
-import ProfessionalHistory from "./components/ProfessionalHistory";
+// import StudentProfile from "./components/StudentProfile";
+// import ScheduledStudent from "./components/ScheduledStudent";
+// import MakeRequest from "./components/MakeRequest";
+// import StudentReview from "./components/StudentReview";
+// import CreateESP from "./components/CreateESP";
+// import ActiveStudents from "./components/ActiveStudents";
+// import Report from "./components/Report";
+// import ProfessionalProfile from "./components/ProfessionalProfile";
+// import MatchRequest from "./components/MatchRequest";
+// import EditProfessionalProfile from "./components/EditProfessionalProfile";
+// import ScheduledProfessional from "./components/ScheduledProfessional";
+// import ProfessionalHistory from "./components/ProfessionalHistory";
 function App() {
   const [activeButton, setActiveButton] = useState("scheduled");
 
@@ -182,12 +182,12 @@ function App() {
             </div>
           </div>
         )}
-        <Routes>
+         <Routes>
           <Route path="/" element={<FrontPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<Features />} />
           <Route path="/working" element={<Working />} />
-          <Route path="/login" element={<Login />} />
+          {/*<Route path="/login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/StudentProfile" element={<StudentProfile />} />
           <Route
@@ -212,8 +212,8 @@ function App() {
           <Route
             path="/EditProfessionalProfile"
             element={<EditProfessionalProfile />}
-          />
-        </Routes>
+          /> */}
+        </Routes> 
       </div>
     </Router>
   );
