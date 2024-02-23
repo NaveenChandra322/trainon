@@ -74,26 +74,9 @@ const FrontPage = () => {
                 EMPOWERING PEOPLE TO START YOGA
               </h3>
               <div style={{ textAlign: "center" }}>
-                {localStorage.getItem("token") === null ? (
-                  <Link
-                    className="btn my-2 my-sm-0 shadow rounded"
-                    style={{
-                      backgroundColor: "#eeeeee",
-                      color: "#eeeeee",
-                      fontWeight: "bold",
-                      fontSize: "18px",
-                      width: "100%",
-                      maxWidth: "220px",
-                      marginTop: "20px",
-                    }}
-                    type="submit"
-                    to="/register"
-                  >
-                    Sign Up
-                  </Link>
-                ) : (
+        
                   <>
-                    {localStorage.getItem("role") === "student" && (
+                    
                       <a
                         className="btn my-2 my-sm-0 shadow rounded"
                         style={{
@@ -111,27 +94,10 @@ const FrontPage = () => {
                       >
                         START
                       </a>
-                    )}
-                    {localStorage.getItem("role") === "professional" && (
-                      <a
-                        className="btn my-2 my-sm-0 shadow rounded"
-                        style={{
-                          backgroundColor: "#4455a4",
-                          color: "#000000",
-                          fontWeight: "bold",
-                          fontSize: "18px",
-                          width: "100%",
-                          maxWidth: "220px",
-                          marginTop: "20px",
-                        }}
-                        type="submit"
-                        href="/ScheduledProfessional"
-                      >
-                        To Dashboard
-                      </a>
-                    )}
+                    
+                    
                   </>
-                )}
+                
               </div>
             </div>
           </div>
